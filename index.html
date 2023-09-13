@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 3, task 3</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="heading">
+        <h1>Hobbies</h1>
+      </div>
+      <div class="menucontainer">
+        <div class="stickymenu">
+          <label for="ham-menu" id="hamlabel">Select a hobby</label>
+          <select name="hamburgermenu" id="ham-menu" class="hambmenu">
+            <option value="1">Writing</option>
+            <option value="2">Photography</option>
+            <option value="3">Drawing</option>
+          </select>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="container">
+        <div class="writing">
+          <h2>My short story <span class="storytitle">Bile</span></h2>
+          <p class="description">
+            I dabble in writing in my free time. This short story got published
+            in the english quarterly magazine; Makarelle. <br />
+            Sadly the magazine is no longer published online.<br />
+            The soft-cover collection of shortstories this is a part of can be
+            found
+            <a
+              href="https://www.amazon.com/Anthology-ONE-Makarelle/dp/B09L3RC6GJ"
+              target="_blank"
+              >here.</a
+            >
+          </p>
+
+          <div class="fullscreen">
+            <input
+              class="checkbox"
+              id="toggleSwitch"
+              type="checkbox"
+              onclick="showtext()"
+            />
+            <label
+              class="switch"
+              id="labelbtn"
+              for="toggleSwitch"
+              style="background: #ccc5b9"
+              >See Full Text.</label
+            >
+            <!-- This was a weird way to make a button, but sort of fun! The checkbox lets me do spesific effects when selected or not.  -->
+          </div>
+          <div class="textcontainer" id="textwrapper" style="display: none">
+            <iframe
+              class="text"
+              src="https://docs.google.com/document/d/e/2PACX-1vTyY3iWy_MXYra_STKm1ur7nNwn8uS269DO4YlcH2lrtmPrHDUxfx6Mh6140RThg5jg-MfJg0AN6pZ2/pub?embedded=true"
+            ></iframe>
+          </div>
+        </div>
+        <div></div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
+</html>
