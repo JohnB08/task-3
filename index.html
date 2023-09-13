@@ -11,7 +11,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="script.js" defer></script>
   </head>
   <body>
     <header>
@@ -22,15 +22,16 @@
         <div class="stickymenu">
           <label for="ham-menu" id="hamlabel">Select a hobby</label>
           <select name="hamburgermenu" id="ham-menu" class="hambmenu">
-            <option value="1">Writing</option>
-            <option value="2">Photography</option>
-            <option value="3">Drawing</option>
+            <option value="1" id="write">Writing</option>
+            <option value="2" id="photo">Photography</option>
+            <option value="3" id="music">music</option>
           </select>
         </div>
       </div>
     </header>
     <main>
-      <section class="container">
+      <p class="about">These are the hobbies that shape who I am.</p>
+      <section class="container" id="writingbox" style="display: block">
         <div class="writing">
           <h2>My short story <span class="storytitle">Bile</span></h2>
           <p class="description">
@@ -69,7 +70,25 @@
             ></iframe>
           </div>
         </div>
-        <div></div>
+      </section>
+      <section class="container" id="photobox" style="display: none">
+        <div>
+          <p class="description">
+            These are some of the photographs I've taken over the years.
+          </p>
+          <div class="imagecontainer">
+            <img src="" alt="" /><img src="" alt="" /><img src="" alt="" /><img
+              src=""
+              alt=""
+            /><img src="" alt="" /><img src="" alt="" />
+          </div>
+        </div>
+      </section>
+      <section class="container" id="musicbox" style="display: none">
+        <div>
+          <div></div>
+          <div></div>
+        </div>
       </section>
     </main>
     <footer></footer>
