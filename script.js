@@ -3,7 +3,7 @@ function showtext() {
   let textcontainer = document.getElementById("textwrapper");
   let label = document.getElementById("labelbtn");
   if (checkbox.checked === true) {
-    textcontainer.style.display = "block";
+    textcontainer.style.display = "flex";
     label.style.background = "#EB5E28";
   } else {
     textcontainer.style.display = "none";

@@ -97,11 +97,13 @@ header {
 }
 .textcontainer {
   height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .text {
   width: 90%;
   height: 90%;
-  margin: auto;
   background: white;
   padding: 0.1em;
   border: 0.1em solid #403d39;
