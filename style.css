@@ -125,7 +125,7 @@ link:focus,
 .link:active {
   color: #eb5e28;
 }
-/* Author section and music section*/
+/* Author section and music section. Both of these use the same setup, so using the same classes for both were usefull*/
 .authorcontainer {
   display: flex;
   justify-content: space-between;
