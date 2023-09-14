@@ -157,7 +157,10 @@ link:focus,
 }
 /* emailinput */
 footer {
-  padding-bottom: 1em;
+  margin: 2em 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #emailinput {
   background: white;
@@ -176,6 +179,31 @@ footer {
 #emailinput:focus {
   width: 20%;
   outline: none;
+}
+#subbtn {
+  font-size: inherit;
+  background: inherit;
+  font-family: inherit;
+  padding: 0.2em 0.5em;
+  cursor: pointer;
+  border: 0.1em solid #403d39;
+  box-shadow: 0 0.2em 0 #252422;
+  margin-bottom: 1em;
+  border-radius: 1em;
+  transition: 0.2s;
+}
+#subbtn:hover,
+#subbtn:focus {
+  outline: none;
+  background: #403d39;
+  color: #fffcf2;
+  transform: translate(0, 0.1em);
+  box-shadow: 0 0.1em 0 #252422;
+}
+#subbtn:active {
+  transform: translate(0, 0.2em);
+  box-shadow: none;
+  background: #eb5e28;
 }
 
 @media only screen and (min-width: 1600px) {
