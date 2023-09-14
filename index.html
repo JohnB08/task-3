@@ -53,12 +53,7 @@
           </p>
 
           <div class="fullscreen">
-            <input
-              class="checkbox"
-              id="toggleSwitch"
-              type="checkbox"
-              onclick="showtext()"
-            />
+            <input class="checkbox" id="toggleSwitch" type="checkbox" />
             <label
               class="switch"
               id="labelbtn"
@@ -66,6 +61,7 @@
               style="background: #ccc5b9"
               >See Full Text.</label
             >
+            <!-- This used to be a function before i discovered "defer" -->
             <!-- This was a weird way to make a button, but sort of fun! The checkbox lets me do spesific effects when selected or not.  -->
           </div>
           <div class="textcontainer" id="textwrapper" style="display: none">

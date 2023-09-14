@@ -1,7 +1,7 @@
-function showtext() {
-  const checkbox = document.getElementById("toggleSwitch");
-  let textcontainer = document.getElementById("textwrapper");
-  let label = document.getElementById("labelbtn");
+const checkbox = document.getElementById("toggleSwitch");
+let textcontainer = document.getElementById("textwrapper");
+let label = document.getElementById("labelbtn");
+checkbox.addEventListener("click", (event) => {
   if (checkbox.checked === true) {
     textcontainer.style.display = "flex";
     label.style.background = "#EB5E28";
@@ -9,7 +9,7 @@ function showtext() {
     textcontainer.style.display = "none";
     label.style.background = "#CCC5B9";
   }
-}
+});
 
 const container = document.getElementById("ham-menu");
 let writing = document.getElementById("writingbox");
