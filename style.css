@@ -56,6 +56,9 @@ header {
   box-shadow: 0 1em 0 #403d39;
   margin-bottom: 2em;
 }
+.about {
+  font-weight: 400;
+}
 /* Writing section */
 .writing {
   text-align: center;
