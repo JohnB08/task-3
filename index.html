@@ -12,8 +12,10 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="script.js" defer></script>
+    <!-- I didn't know about the defer property of the script function. Couldn't get the select script to work for days. I could probably rework the checkbox script too now, but not today. -->
   </head>
   <body>
+    <!-- Just the header, and menu -->
     <header>
       <div class="heading">
         <h1>Hobbies</h1>
@@ -29,8 +31,10 @@
         </div>
       </div>
     </header>
+    <!-- Main content here -->
     <main>
       <h3 class="about">These are the hobbies that shape who I am.</h3>
+      <!-- First container -->
       <section class="container" id="writingbox" style="display: block">
         <div class="writing">
           <h2>My short story <span class="storytitle">Bile</span></h2>
@@ -72,6 +76,7 @@
           </div>
         </div>
       </section>
+      <!-- Second container -->
       <section class="container" id="bookbox" style="display: none">
         <div>
           <p class="description">
@@ -178,6 +183,7 @@
           </div>
         </div>
       </section>
+      <!-- Third container -->
       <section class="container" id="musicbox" style="display: none">
         <div class="list">
           <p class="description">
@@ -350,6 +356,7 @@
         </div>
       </section>
     </main>
+    <!-- Footer with placeholder form that does nothing -->
     <footer>
       <form action="">
         <label for="emailinput">Join the imaginary newsletter:</label>
