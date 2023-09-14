@@ -12,10 +12,10 @@ body {
 /* Top-header */
 header {
   display: flex;
-  background: linear-gradient(#eb5e28, #fffcf2);
+  background: linear-gradient(#fffcf2, #403d39);
   justify-content: center;
   border-bottom: 0.1em solid #403d39;
-  box-shadow: 0 0.2em 0.5em #eb5e28;
+  box-shadow: 0 0.5em 0.5em 0.5em #404040;
 }
 .heading {
   margin: auto;
