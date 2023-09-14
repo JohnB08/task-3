@@ -40,6 +40,7 @@ header {
   background: inherit;
   border: none;
   font-family: inherit;
+  font-size: inherit;
   text-align: center;
 }
 .hambmenu:focus {
@@ -107,6 +108,15 @@ header {
   border-radius: 1em;
   box-shadow: 0 0.1em 0 #252422;
 }
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+.link:hover,
+link:focus,
+.link:active {
+  color: #eb5e28;
+}
 /* Author section */
 .authorcontainer {
   display: flex;
@@ -142,4 +152,22 @@ header {
   margin: 1em 0;
   height: 15vh;
   width: 90%;
+}
+@media only screen and (min-width: 1600px) {
+  body {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  body {
+    font-size: 12px;
+  }
+  .container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .hambmenu {
+    font-size: 16px;
+  }
 }
