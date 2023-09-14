@@ -13,7 +13,7 @@ function showtext() {
 
 const container = document.getElementById("ham-menu");
 let writing = document.getElementById("writingbox");
-let photo = document.getElementById("photobox");
+let photo = document.getElementById("bookbox");
 let music = document.getElementById("musicbox");
 container.addEventListener("change", (event) => {
   if (container.value == 1) {
