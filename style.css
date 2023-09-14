@@ -154,6 +154,9 @@ link:focus,
   width: 90%;
 }
 /* emailinput */
+footer {
+  padding-bottom: 1em;
+}
 #emailinput {
   background: white;
   border: 0.1em solid #eb5e28;
@@ -161,6 +164,8 @@ link:focus,
   width: 15%;
   text-align: center;
   transition: 0.3s all;
+  font-size: inherit;
+  font-family: inherit;
 }
 #emailinput:hover {
   width: 17%;
@@ -170,6 +175,7 @@ link:focus,
   width: 20%;
   outline: none;
 }
+
 @media only screen and (min-width: 1600px) {
   body {
     font-size: 24px;
