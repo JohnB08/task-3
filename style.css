@@ -117,7 +117,7 @@ link:focus,
 .link:active {
   color: #eb5e28;
 }
-/* Author section */
+/* Author section and music section*/
 .authorcontainer {
   display: flex;
   justify-content: space-between;
@@ -152,6 +152,23 @@ link:focus,
   margin: 1em 0;
   height: 15vh;
   width: 90%;
+}
+/* emailinput */
+#emailinput {
+  background: white;
+  border: 0.1em solid #eb5e28;
+  border-radius: 0.5em;
+  width: 15%;
+  text-align: center;
+  transition: 0.3s all;
+}
+#emailinput:hover {
+  width: 17%;
+}
+#emailinput:active,
+#emailinput:focus {
+  width: 20%;
+  outline: none;
 }
 @media only screen and (min-width: 1600px) {
   body {
