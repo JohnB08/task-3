@@ -12,10 +12,10 @@ body {
 /* Top-header */
 header {
   display: flex;
-  background: linear-gradient(#403d39, #ccc5b9);
+  background: linear-gradient(#eb5e28, #fffcf2);
   justify-content: center;
   border-bottom: 0.1em solid #403d39;
-  box-shadow: 0 0.2em 0.5em #403d39;
+  box-shadow: 0 0.2em 0.5em #eb5e28;
 }
 .heading {
   margin: auto;
@@ -111,6 +111,8 @@ header {
 .authorcontainer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding-bottom: 2em;
 }
 .reverse {
   flex-direction: row-reverse;
@@ -130,5 +132,14 @@ header {
   box-shadow: -0.1em 0.1em 0 #eb5e28;
 }
 .authdesc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 0 1em;
+  width: 63vw;
+}
+.authdesc p iframe {
+  margin: 1em 0;
+  height: 15vh;
+  width: 90%;
 }
