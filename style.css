@@ -161,9 +161,10 @@ link:focus,
 }
 .handwave {
   display: inline-block;
-  padding-right: 0.5em;
-  padding-bottom: 0.5em;
-  /* This padding acts as a "hand" so the arm seems to pivot instead of just wiggling around. */
+  font-size: 1.5em;
+  padding-right: 0.7em;
+  padding-bottom: 0.7em;
+  /* This padding acts as a "wrist joint" so the hand seems to pivot on the joint instead of just wiggling around the center of the palm. */
   animation: 1s ease-in-out 0.5s infinite alternate;
   animation-name: wavinghand;
 }
@@ -181,23 +182,31 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+}
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+footer a:hover {
+  color: #eb5e28;
 }
 #emailinput {
   background: white;
   border: 0.1em solid #eb5e28;
   border-radius: 0.5em;
-  width: 15%;
+  width: 15vw;
   text-align: center;
   transition: 0.3s all;
   font-size: inherit;
   font-family: inherit;
 }
 #emailinput:hover {
-  width: 17%;
+  width: 17vw;
 }
 #emailinput:active,
 #emailinput:focus {
-  width: 20%;
+  width: 20vw;
   outline: none;
 }
 #subbtn {
