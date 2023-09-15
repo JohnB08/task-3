@@ -27,16 +27,18 @@ header {
 }
 .menucontainer {
   position: fixed;
-  top: 5%;
-  right: 5%;
+  top: 7%;
+  right: 8%;
 }
 .stickymenu {
   display: flex;
+  font-size: 1.2em;
   flex-direction: column;
   background: #fffcf2;
   border: 0.2em solid #403d39;
   border-radius: 0.5em;
-  padding: 0.1em 0.3em;
+  padding: 0.1em 0.5em;
+  box-shadow: 0 0.2em 0 #eb5e28;
 }
 .hambmenu {
   background: inherit;
@@ -262,6 +264,7 @@ footer a:hover {
   }
   .menucontainer {
     top: 2.5%;
+    right: 5%;
   }
   .authorcontainer {
     padding-left: 0.1em;
