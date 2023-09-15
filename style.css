@@ -235,6 +235,13 @@ footer {
     border-left: none;
     border-radius: 0;
   }
+  .menucontainer {
+    top: 2.5%;
+  }
+  .authorcontainer {
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+  }
   .hambmenu {
     font-size: 16px;
   }
