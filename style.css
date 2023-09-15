@@ -159,6 +159,22 @@ link:focus,
   height: 15vh;
   width: 90%;
 }
+.handwave {
+  display: inline-block;
+  padding-right: 0.5em;
+  padding-bottom: 0.5em;
+  /* This padding acts as a "hand" so the arm seems to pivot instead of just wiggling around. */
+  animation: 1s ease-in-out 0.5s infinite alternate;
+  animation-name: wavinghand;
+}
+@keyframes wavinghand {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(90deg);
+  }
+}
 /* emailinput */
 footer {
   margin: 2em 0;
