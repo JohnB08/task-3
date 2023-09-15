@@ -26,9 +26,10 @@ header {
   text-shadow: 0 0 0em #252422;
 }
 .menucontainer {
-  position: fixed;
-  top: 7%;
-  right: 8%;
+  position: sticky;
+  top: 5vh;
+  transform: translate(0, -5vh);
+  display: inline-block;
 }
 .stickymenu {
   display: flex;
@@ -263,8 +264,8 @@ footer a:hover {
     border-radius: 0;
   }
   .menucontainer {
-    top: 2.5%;
-    right: 5%;
+    top: 7.5vh;
+    transform: translate(30vw, -7.5vh);
   }
   .authorcontainer {
     padding-left: 0.1em;
