@@ -32,3 +32,22 @@ container.addEventListener("change", (event) => {
     music.style.display = "block";
   }
 });
+const stickyMenu = document.getElementById("stickymenu");
+const scrollY = window.scrollY;
+function moveMenu() {
+  stickyMenu.style.display = "inline-block";
+  stickyMenu.style.transform = "translate(40vw,-5vh)";
+  const curYPos = window.scrollY;
+  if (curYPos === scrollY) {
+    stickyMenu.style.transform = "translate(0vw, -5vh)";
+  }
+}
+function menublock() {
+  stickyMenu.style.transform = "translate(0vw, -7.5vh)";
+  stickyMenu.style.display = "block";
+}
+if (window.innerWidth <= 800) {
+  window.addEventListener("scroll", menublock);
+} else {
+  window.addEventListener("scroll", moveMenu);
+}

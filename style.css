@@ -30,6 +30,7 @@ header {
   top: 5vh;
   transform: translate(0, -5vh);
   display: inline-block;
+  transition: 0.3s ease-in-out;
 }
 .stickymenu {
   display: flex;
