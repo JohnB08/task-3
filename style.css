@@ -183,16 +183,23 @@ link:focus,
 footer {
   margin: 2em 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
 }
+
 footer a {
   text-decoration: none;
   color: inherit;
 }
 footer a:hover {
   color: #eb5e28;
+}
+footer form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
 }
 #emailinput {
   background: white;
@@ -220,7 +227,6 @@ footer a:hover {
   cursor: pointer;
   border: 0.1em solid #403d39;
   box-shadow: 0 0.2em 0 #252422;
-  margin-bottom: 1em;
   border-radius: 1em;
   transition: 0.2s;
 }
