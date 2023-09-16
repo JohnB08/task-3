@@ -43,8 +43,9 @@ function moveMenu() {
   }
 }
 function menublock() {
-  stickyMenu.style.transform = "translate(0vw, 0vh)";
-  stickyMenu.style.display = "block";
+  stickyMenu.style.width = "100vw";
+  stickyMenu.style.position = "fixed";
+  stickyMenu.style.transform = "translate(-50vw, -7vh)";
 }
 if (window.innerWidth <= 800) {
   window.addEventListener("scroll", menublock);
