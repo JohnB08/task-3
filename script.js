@@ -43,7 +43,7 @@ function moveMenu() {
   }
 }
 function menublock() {
-  stickyMenu.style.transform = "translate(0vw, -5vh)";
+  stickyMenu.style.transform = "translate(0vw, 0vh)";
   stickyMenu.style.display = "block";
 }
 if (window.innerWidth <= 800) {
