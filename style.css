@@ -30,7 +30,8 @@ header {
   top: 5vh;
   transform: translate(0, -5vh);
   display: inline-block;
-  transition: 0.3s ease-in-out;
+  box-sizing: border-box;
+  transition: 0.5s ease-in-out;
 }
 .stickymenu {
   display: flex;
@@ -282,3 +283,5 @@ footer form {
     font-size: 16px;
   }
 }
+
+/* The css this time around got messy fast. I think it's just because of the scope of the site. Next project i'm gonna make better use of classes and stuff so it doesn't get this messy. */
