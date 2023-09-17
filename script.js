@@ -69,7 +69,6 @@ function phoneMenu() {
 //Hopefully this now doesn't require a refresh to make the phone function or fullscreen function to work.
 function screenWidth() {
   if (window.innerWidth <= 600) {
-    stickyMenu.style.width = "40vw";
     window.addEventListener("scroll", phoneMenu);
     window.removeEventListener("scroll", desktopMenu);
   } else {
