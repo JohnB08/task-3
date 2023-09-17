@@ -42,27 +42,41 @@ const menuCon = document.getElementById("menucon");
 const headingText = document.getElementById("headingtext");
 
 //This one moves the section menu to the right as you scroll, on portrait phones it covers the entire width.
-function moveMenu() {
-  stickyMenu.style.display = "inline-block";
+function desktopMenu() {
+  stickyMenu.style.position = "sticky";
   stickyMenu.style.transform = "translate(40vw,-5.5vh)";
+  stickyMenu.style.width = "15vw";
+  headingText.style.color = "#fffcf2";
   menuCon.style.borderTopRightRadius = "0";
   menuCon.style.borderTopLeftRadius = "0";
   const curYPos = window.scrollY;
   if (curYPos === scrollY) {
     stickyMenu.style.transform = "translate(0vw, -5vh)";
-    menuCon.style.borderTopRightRadius = "0.5em";
-    menuCon.style.borderTopLeftRadius = "0.5em";
+    menuCon.style.borderRadius = "0.5em";
   }
 }
-function menublock() {
+function phoneMenu() {
   stickyMenu.style.width = "100vw";
   stickyMenu.style.position = "fixed";
   stickyMenu.style.transform = "translate(-50vw, -7.5vh)";
   menuCon.style.borderRadius = "0";
   headingText.style.color = "#403d39";
+  if (curYPos === scrollY && window.innerWidth > 800) {
+    stickyMenu.style.transform = "translate(0vw, -5vh)";
+    menuCon.style.borderRadius = "0.5em";
+  }
 }
-if (window.innerWidth <= 800) {
-  window.addEventListener("scroll", menublock);
-} else if (window.innerWidth > 800) {
-  window.addEventListener("scroll", moveMenu);
+//Hopefully this now doesn't require a refresh to make the phone function or fullscreen function to work.
+function screenWidth() {
+  if (window.innerWidth <= 600) {
+    stickyMenu.style.width = "40vw";
+    window.addEventListener("scroll", phoneMenu);
+    window.removeEventListener("scroll", desktopMenu);
+  } else {
+    window.addEventListener("scroll", desktopMenu);
+    window.removeEventListener("scroll", phoneMenu);
+  }
 }
+screenWidth();
+window.addEventListener("resize", screenWidth);
+//It doesn't work, but if I rework the entire site it would. I think there's a way in JS to change classes for elements, and then have different CSS for the different classes. I.E making my own mediaquery that works like I want. I'm gonna keep this for now tho, even though it looks bad.
