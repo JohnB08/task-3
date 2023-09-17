@@ -61,7 +61,7 @@ function phoneMenu() {
   stickyMenu.style.transform = "translate(-50vw, -7.5vh)";
   menuCon.style.borderRadius = "0";
   headingText.style.color = "#403d39";
-  if (curYPos === scrollY && window.innerWidth > 800) {
+  if (curYPos === scrollY && window.innerWidth > 600) {
     stickyMenu.style.transform = "translate(0vw, -5vh)";
     menuCon.style.borderRadius = "0.5em";
   }
